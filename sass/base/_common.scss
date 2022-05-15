@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  box-sizing: border-box;
+    font-family: $primaryFont, 'Raleway', sans-serif;
+    color: $primaryFontColor;
+  }
+  a{
+    text-decoration: none;
+    color:inherit;
+  }
+  a:visited{
+    color:inherit;
+  }
+    
+  img {
+    display: block;
+  }
+  
+  .list {
+    list-style: none;
+  }
+  
+  .link {
+    text-decoration: none;
+  }
+  
+  .address {
+    font-style: normal;
+  }
+  

@@ -1,0 +1,79 @@
+.contact{
+
+    &__list {
+        font-family: $primaryFont;
+        font-weight: 500;
+        display: inherit;
+        align-items: center;
+      
+    }
+
+    &__item {
+        margin-left:0px;
+        &--dark-theme{
+            margin:8px;
+        
+        }
+
+    }
+
+    &__link {
+        font-size: 14px;
+        line-height: 1.143;
+        letter-spacing: 0.02em;
+        color: $secondaryFontColor;
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+
+    &__icon {
+        margin-right: 10px;
+    }
+
+}
+
+.envelope {
+    display: inline-flex;
+    width: 16px;
+    height: 12px;
+    fill: currentColor;
+}
+
+.smartphone {
+    display: inline-flex;
+    width: 10px;
+    height: 16px;
+    vertical-align: text-top;
+    fill: currentColor;
+}
+
+
+@media screen {
+    .heder-contact__wraper {
+        display: none;
+    }
+}
+
+@media screen and (min-width:768px) {
+    .heder-contact__wraper {
+        display: block;
+        align-items: left;
+    }
+
+    .contact__item {
+        margin: auto 0px;
+    }
+}
+
+@media screen and (min-width:1200px) {
+    .heder-contact__wraper {
+        display: inline-flex;
+        
+    }
+    .contact__item:last-child{
+        margin-left:30px;
+    }
+    .contact__item--dark-theme:last-child{
+        margin-left:0px;
+    }
+}
